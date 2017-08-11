@@ -4,4 +4,4 @@
 #   travistest/main.py
 # fi
 
-pyinstaller --name=Travistest  --clean --noconfirm --windowed --onefile travistest/main.py
+pyinstaller --name="Travistest-$TRAVIS_TAG-$TRAVIS_OS_NAME"  --clean --noconfirm --windowed --onefile travistest/main.py
