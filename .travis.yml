@@ -8,6 +8,10 @@ install: pip3 install .
 script:
 - pytest
 - ./build.sh
+
+before_deploy:
+  - pip3 install pyinstaller
+
 deploy:
   provider: releases
   api_key:
