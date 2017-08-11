@@ -19,7 +19,7 @@ before_install:
 
 
 install:
-  - pip3 install pyinstaller
+  - pip3 install https://github.com/pyinstaller/pyinstaller/archive/develop.zip
   - pip3 install .
 
 
@@ -36,4 +36,4 @@ deploy:
     - build/Travistest
   on:
     tags: true
-    condition:
+    # condition: "[[ "$TRAVIS_OS_NAME" == "osx" ]]"
