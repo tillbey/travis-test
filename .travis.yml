@@ -1,16 +1,15 @@
 language: python
 os:
-- osx
-- linux
+  - osx
+# - linux
 python:
-- '3.5'
-install: pip3 install .
-script:
-- pytest
-- ./build.sh
-
-before_deploy:
+  - '3.5'
+install:
   - pip3 install pyinstaller
+  - pip3 install .
+script:
+  - pytest
+  - pyinstaller --name=Travistest --clean --noconfirm --windowed --onefile travistest/main.py
 
 deploy:
   provider: releases
@@ -21,3 +20,4 @@ deploy:
     - build/Travistest
   on:
     tags: true
+    condition:
