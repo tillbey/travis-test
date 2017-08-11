@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='travis-test',
+    name='travistest',
     version='0.1.0',
     author='Till Bey',
     author_email='tillbey@gmail.com',
