@@ -1,0 +1,12 @@
+language: python
+
+os:
+  - osx
+  - linux
+
+python:
+  - "3.6"
+
+install: pip3 install .
+
+script: pytest
