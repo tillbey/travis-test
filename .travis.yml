@@ -28,6 +28,7 @@ install:
   - pip3 install pytest
   - pip3 install .
   - brew install hugo
+  - cd pages/public && ls -l
 
 
 script:
@@ -49,6 +50,7 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: "pages/public"
-  # on:
+  on:
+    branch: master
   #   tags: true
     # condition: "[[ "$TRAVIS_OS_NAME" == "osx" ]]"
