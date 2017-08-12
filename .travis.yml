@@ -27,11 +27,13 @@ install:
   - which python3
   - pip3 install pytest
   - pip3 install .
+  - brew install hugo
 
 
 script:
   - pytest
   - ./build.sh
+  - cd pages && hugo
 
 deploy:
   provider: releases

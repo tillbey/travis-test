@@ -1,0 +1,3 @@
+baseurl: "https://tillbey.github.io/travis-test/"
+theme: "hugo-bootstrap-premium"
+metaDataFormat: "yaml"
