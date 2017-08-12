@@ -10,9 +10,9 @@ matrix:
     - os: osx
       language: generic
       env: TOXENV=py36
-    - os: linux
-      language: python
-      python: 3.6
+    # - os: linux
+    #   language: python
+    #   python: 3.6
 
 
 before_install:
@@ -36,7 +36,7 @@ script:
   - cd pages && hugo
 
 deploy:
-  provider: releases
+- provider: releases
   skip_cleanup: true
   api_key:
     secure: m1cIFUdlPc/aUWTFDhUrFNl5Z9D4ddP1Fihh0PEaVHQ9bG1/hJfDGd+aFxEvEAMh2IAJd/7UvZZwVGr9SX9/4Ov1qvCWvYYUCP7V16g4NJzwOUolygVrmsWeLtQIWdQbihMAu2Yt5WZJEJhUNEN0F/NxMNBNibsexB7nQ/a4Fe+Oj9OD5FAh80ROjcwHLSY3Eo1V7sdbWu3FX6FWy9g47WsugvGtb9bsjLWdRS0v/Mc9LaiKOt7XW/CPFqNi/+csNia64nLjvmcJElTxo05ncxHX6tfWuE104t53mRUv8YO9/0hy7Y3LODWaD5vtlXjz3OPU80cbMnnm8Puoz4nwNxtp0xLF6h62ufLLyZjGd/M2Qm1o3hWfk8dUXeZojdUyYR/lz9xGG2tP5Pt3fHixyKLiltM24vq410FZZLIGbOahfQgnPzel5HwEC7ipfcJnSnTPyG1H6pkOpo6TW/RVmNKisy1puvSg2Ml3vri6/W7yBOHPyi0rO5cfTk0qS4ckPZRgdSLVo3hTWgjHIhGn/Aj7BD3k5VmNfShW7xf8oLOUroyanfAuh0CVeLJqJeXy+T8YUfEk25jDimzbkH3Sk82wfRoqQQhLMRudV+CXm89jWOOobRR3deZCpO2aaRho9XSewOG2vNMw9e4rB4eRjbEEuh34kli2ozDFZGWOJus=
@@ -44,4 +44,12 @@ deploy:
     - "dist/Travistest-$TRAVIS_TAG-$TRAVIS_OS_NAME.zip"
   on:
     tags: true
+    # condition: "[[ "$TRAVIS_OS_NAME" == "osx" ]]"
+- provider: pages
+  skip_cleanup: true
+  api_key:
+    secure: m1cIFUdlPc/aUWTFDhUrFNl5Z9D4ddP1Fihh0PEaVHQ9bG1/hJfDGd+aFxEvEAMh2IAJd/7UvZZwVGr9SX9/4Ov1qvCWvYYUCP7V16g4NJzwOUolygVrmsWeLtQIWdQbihMAu2Yt5WZJEJhUNEN0F/NxMNBNibsexB7nQ/a4Fe+Oj9OD5FAh80ROjcwHLSY3Eo1V7sdbWu3FX6FWy9g47WsugvGtb9bsjLWdRS0v/Mc9LaiKOt7XW/CPFqNi/+csNia64nLjvmcJElTxo05ncxHX6tfWuE104t53mRUv8YO9/0hy7Y3LODWaD5vtlXjz3OPU80cbMnnm8Puoz4nwNxtp0xLF6h62ufLLyZjGd/M2Qm1o3hWfk8dUXeZojdUyYR/lz9xGG2tP5Pt3fHixyKLiltM24vq410FZZLIGbOahfQgnPzel5HwEC7ipfcJnSnTPyG1H6pkOpo6TW/RVmNKisy1puvSg2Ml3vri6/W7yBOHPyi0rO5cfTk0qS4ckPZRgdSLVo3hTWgjHIhGn/Aj7BD3k5VmNfShW7xf8oLOUroyanfAuh0CVeLJqJeXy+T8YUfEk25jDimzbkH3Sk82wfRoqQQhLMRudV+CXm89jWOOobRR3deZCpO2aaRho9XSewOG2vNMw9e4rB4eRjbEEuh34kli2ozDFZGWOJus=
+  local_dir: "pages/public"
+  # on:
+  #   tags: true
     # condition: "[[ "$TRAVIS_OS_NAME" == "osx" ]]"
