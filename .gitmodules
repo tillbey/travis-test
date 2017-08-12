@@ -1,6 +1,0 @@
-[submodule "pages/themes/hugo-travelify-theme"]
-	path = pages/themes/hugo-travelify-theme
-	url = https://github.com/balaramadurai/hugo-travelify-theme.git
-[submodule "pages/themes/hugo-bootstrap-premium"]
-	path = pages/hugo-bootstrap-premium
-	url = https://github.com/appernetic/hugo-bootstrap-premium.git
