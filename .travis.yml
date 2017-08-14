@@ -3,7 +3,8 @@ language: python
 cache:
   # pip: true
   directories:
-    - /usr/local/Cellar/python3
+    - /usr/local/bin
+    - /usr/local/Cellar
     - /usr/local/lib/python3.6/site-packages
 
 matrix:
