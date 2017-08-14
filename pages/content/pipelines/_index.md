@@ -1,12 +1,11 @@
 ---
-title: blup
-layout: section
+title: Pipelines
 draft: false
 menu:
      main:
-        name: "docs"
+        name: "Pipelines"
         weight: 1
-        identifier: "docs"
+        identifier: "Pipelines"
 ---
 
 
