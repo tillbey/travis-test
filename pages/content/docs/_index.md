@@ -1,6 +1,5 @@
 ---
 title: blup
-layout: section
 draft: false
 menu:
      main:
