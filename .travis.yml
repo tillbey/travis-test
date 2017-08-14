@@ -33,9 +33,6 @@ script:
   - pytest
   - ./build.sh
   - cd pages && hugo
-  - ls -l
-  - cd public
-  - ls -l
 
 deploy:
 - provider: releases
@@ -50,7 +47,7 @@ deploy:
 - provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: "pages/public"
+  local_dir: public
   on:
     branch: master
   #   tags: true
