@@ -7,11 +7,11 @@ draft = false
 type = "page"
 [menu]
      [menu.main]
-        name = "Showcase"
+        name = "Exempel"
         weight = 4
-        identifier = "showcase"
+        identifier = "Exempel"
 +++
 
-# Showcase
+# Exempel
 
-Showcase text in english.
+Exempel text på svenska för Showcase.
