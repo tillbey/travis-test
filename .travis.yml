@@ -28,15 +28,14 @@ install:
   - pip3 install pytest
   - pip3 install .
   - brew install hugo
-  - ls -l
-  - cd pages/public
-  - ls -l
-
 
 script:
   - pytest
   - ./build.sh
   - cd pages && hugo
+  - ls -l
+  - cd public
+  - ls -l
 
 deploy:
 - provider: releases
