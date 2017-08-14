@@ -28,7 +28,9 @@ install:
   - pip3 install pytest
   - pip3 install .
   - brew install hugo
-  - cd pages/public && ls -l
+  - ls -l
+  - cd pages/public
+  - ls -l
 
 
 script:
