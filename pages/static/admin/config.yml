@@ -2,7 +2,7 @@ backend:
   name: github
   repo: tillbey/travis-test # Path to your Github repository
   branch: master # Branch to update (master by default)
-  base_url: https://authenticationprovider.herokuapp.com/callback
+  base_url: https://authenticationprovider.herokuapp.com
 
 media_folder: "img/uploads" # Folder where user uploaded files should go
 
