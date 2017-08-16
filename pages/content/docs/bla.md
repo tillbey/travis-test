@@ -2,6 +2,13 @@
 title: bla
 type: section
 draft: false
+menu:
+  main:
+    name: "bla"
+    identifier: "bla"
+    weight: 1
+    URL: /docs/bla
+    parent: docs
 ---
 
 # sdhnd n

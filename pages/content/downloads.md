@@ -4,9 +4,4 @@ title: "test2"
 author: "me"
 draft: false
 type: "page"
-menu:
-     main:
-        name: "Downloads"
-        weight: 6
-        identifier: "downloads"
 ---
