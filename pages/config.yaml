@@ -6,7 +6,7 @@ metaDataFormat: "yaml"
 
 menu:
      main:
-        name: "Github"
-        weight: 2
-        identifier: "github"
+      - Name: "Github"
+        Weight: 2
+        Identifier: "github"
         URL: https://github.com/tillbey/travis-test
