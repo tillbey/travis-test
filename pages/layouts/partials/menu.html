@@ -2,6 +2,7 @@
   <div class="header-menu">
 
     <ul class="header-item-container">
+
       <li class="header-item">
         <a href="{{ .Site.BaseURL }}">Home</a>
       </li>
@@ -13,7 +14,7 @@
               <ul class="header-submenu">
               {{ range .Children }}
                 <li class="sub-item">
-                  <a href="{{ .URL }}/">{{ .URL }}/</a>
+                  <a href="{{ $currentPage.Site.BaseURL }}{{ .URL }}">{{ .Name }}</a>
                 </li>
               {{ end }}
               </ul>
