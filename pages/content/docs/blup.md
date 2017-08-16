@@ -83,8 +83,8 @@ After running the pipeline selecting a module shows its respective output. If al
 [19]:	https://www.riverbankcomputing.com/news
 [20]:	http://www.pyqtgraph.org
 
-[image-1]:	docs/images/module-definition.jpg
-[image-2]:	docs/images/image-viewer.jpg
-[image-3]:	docs/images/module-gui.jpg
-[image-4]:	docs/images/pipeline.jpg
-[image-5]:	docs/images/pipeline-viewing.jpg
+[image-1]:	/docs/images/module-definition.jpg
+[image-2]:	/docs/images/image-viewer.jpg
+[image-3]:	/docs/images/module-gui.jpg
+[image-4]:	/docs/images/pipeline.jpg
+[image-5]:	/docs/images/pipeline-viewing.jpg

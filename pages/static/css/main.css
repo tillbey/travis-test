@@ -1,16 +1,18 @@
 @import "settings.css";
 
-body{
+body {
   background: var(--background-color);
+  color: var(--text-color);
   font-family: 'Source Sans Pro', 'sans-serif';
   font-size: 14px;
   margin-bottom: 70px;
+  display: flex;
 }
 
 aside {
   position: fixed;
   float: left;
-  background-color: red;
+  background-color: var(--float-color);
   margin-top: 200px;
   max-width: 150px;
   text-align: left;
@@ -21,14 +23,23 @@ main {
   padding-left: 200px;
 }
 
-.summary {
-  background-color: white;
+img {
+  width: 100%;
+}
+
+h1, h2, h3, h4 {
+  color: var(--heading-color);
+}
+
+article {
+  background-color: var(--float-color);
   box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.4);
+  margin: 20px;
   padding: 20px;
 }
 
-.content {
-  background-color: var(--accent-color);
+.summary {
+  background-color: white;
   box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.4);
   padding: 20px;
 }
@@ -88,12 +99,12 @@ main {
 }
 
 .active {
-  background-color: blue;
+  background-color: var(--accent-color);
 }
 
 .header-item:hover{
-  border-top-color: var(--accent-color);
-  background-color: var(--accent-color);
+  border-top-color: var(--highlight-color);
+  background-color: var(--highlight-color);
 }
 
 .header-item:hover .header-submenu{
@@ -111,7 +122,7 @@ main {
 }
 
 .sub-item {
-  background-color: red;
+  background-color: var(--float-color);
 	position: relative;
 	padding-left: 20px;
 	width: inherit;
@@ -125,8 +136,8 @@ main {
 }
 
 .sub-item:hover {
-	border-bottom-color: var(--accent-color);
-	border-left-color: var(--accent-color);
+	border-bottom-color: var(--highlight-color);
+	border-left-color: var(--highlight-color);
 }
 
 

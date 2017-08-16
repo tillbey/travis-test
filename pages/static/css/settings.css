@@ -1,5 +1,8 @@
 :root {
   --background-color: orange;
+  --text-color: red;
+  --heading-color: gray;
   --highlight-color: yellow;
   --accent-color: pink;
+  --float-color: white;
 }
