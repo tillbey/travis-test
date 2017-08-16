@@ -1,7 +1,6 @@
 {{ define "main" }}
   <h1>Home page</h1>
       {{ .Content }}
-  <img src="images/3w6h.jpg" alt="grar">
   <ol>
     {{ range .Data.Pages }}
       {{ .Render "summary" }}

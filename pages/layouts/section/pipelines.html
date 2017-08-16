@@ -1,7 +1,7 @@
 {{ define "main" }}
   {{ range .Data.Pages }}
       <article>
-        <a href="{{ .URL }}">{{ (index .Site.Data.pipelines .Params.id).name }}</a>
+        <a href="{{ .URL }}">{{ .Params.id }}</a>
       </article>
   {{ end }}
 {{ end }}
