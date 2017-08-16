@@ -7,6 +7,6 @@ type: "section"
 menu:
      main:
         name: "Blog"
-        weight: 4
+        weight: 3
         identifier: "posts"
 ---

@@ -7,6 +7,6 @@ type: "section"
 menu:
      main:
         name: "Documentation"
-        weight: 2
+        weight: 5
         identifier: "docs"
 ---
