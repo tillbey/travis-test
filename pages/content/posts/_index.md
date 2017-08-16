@@ -6,7 +6,7 @@ draft: false
 type: "section"
 menu:
      main:
-        name: "Posts"
+        name: "Blog"
         weight: 4
         identifier: "posts"
 ---

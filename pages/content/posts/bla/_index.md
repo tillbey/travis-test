@@ -5,8 +5,9 @@ author: "me"
 draft: false
 type: "section"
 menu:
-     main:
-        name: "Documentation"
-        weight: 2
-        identifier: "docs"
+  main:
+    posts:
+      name: "bla"
+      weight: 4
+      identifier: "bla"
 ---

@@ -6,7 +6,7 @@ draft: false
 type: "section"
 menu:
      main:
-        name: "Documentation"
-        weight: 2
-        identifier: "docs"
+        name: "Pipelines"
+        weight: 4
+        identifier: "pipelines"
 ---

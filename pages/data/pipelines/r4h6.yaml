@@ -1,0 +1,8 @@
+name: Another test pipeline
+author: Till Bey
+
+pipeline:
+  modules:
+    - Gaussian filter
+    - Threshold
+    - Volume measurement
