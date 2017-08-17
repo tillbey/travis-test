@@ -1,12 +1,12 @@
 @import "settings.css";
 
 body {
-  background: var(--background-color);
+  background: var(--base-color);
   color: var(--text-color);
   font-family: 'Source Sans Pro', 'sans-serif';
   font-size: 14px;
-  margin-bottom: 70px;
-  display: flex;
+  display: block;
+  margin: 0px;
 }
 
 aside {
@@ -19,16 +19,22 @@ aside {
 }
 
 main {
+  background-color: var(--float-color);
   margin-top: 80px;
-  padding-left: 200px;
+  margin-left: 150px;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 h1, h2, h3, h4 {
   color: var(--heading-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--base-color);
 }
 
 article {
@@ -44,105 +50,105 @@ article {
   padding: 20px;
 }
 
-.header-menu {
+header {
   font-size: 16px;
   font-weight: bold;
-  background-color: rgba(0, 100, 0, 0.9);
+  background-color: var(--float-color);
   box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.4);
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	/*height: $menu-height;*/
+	height: var(--menu-height);
 	z-index: 20;
-	ul {
-		margin: 0 auto;
-		list-style-type: none;
-		height: 100%;
-		padding: 0;
-	}
 }
 
-@media (min-width: 600px) {
-  :root {
-    --accent-color: brown;
-  };
-}
 
-.header-item-container{
-  margin-left: 100px;
+.logo {
+  /*margin-top: 10px;*/
+  height: var(--menu-height);
   float: left;
-	height: 100%;
+  display: block;
+  display: inline;
+  border: 1px solid;
 }
 
-.header-item{
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-left: 0px;
+  float: left;
+	height: calc(var(--menu-height) - 10px);
+  /*width: 100%;*/
+  border: 1px solid;
+  box-sizing: border-box;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+}
+
+.header {
+  vertical-align: middle;
+}
+
+.menu li {
 	height: 100%;
-  width: auto;
-	display: none;
+  box-sizing: border-box;
 	float: left;
 	padding-left: 20px;
 	padding-right: 20px;
-	border-top-color: transparent;
-	border-top-style: solid;
-	border-top-width: 2px;
-	box-sizing: border-box;
-  display: block;
-	a {
-		font-size: 1rem;
-		vertical-align: middle;
-		display: table-cell;
-		height: 200;
-	}
-	/*@media #{$large} {
-		display: block;
-	}*/
+  border: 1px solid;
+	border-top: 5px solid transparent;
+  /*display: block;*/
+  --submenu-visible: none
+}
+
+.menu li:hover {
+  border-color: red;
+  background-color: var(--highlight-color);
+  --submenu-visible: block;
+}
+
+.submenu {
+  background-color: white;
+  padding: 0;
+  float: left;
+  box-sizing: border-box;
+  list-style-type: none;
+	display: var(--submenu-visible);
+  /*padding-top: 30px;*/
+  margin-top: 10px;
+  position: absolute;
+	width: inherit;
+	z-index: 100;
+	list-style-type: none;
+  overflow: auto;
+  transform: translateX(-20px);
+}
+
+.submenu > li {
+  box-sizing: border-box;
+  padding: 0;
+	padding-left: 20px;
+	width: 100%;
+  border-top: none;
+	border-right: 2px solid transparent;
+	height: 20px;
 }
 
 .active {
   background-color: var(--accent-color);
 }
 
-.header-item:hover{
-  border-top-color: var(--highlight-color);
-  background-color: var(--highlight-color);
-}
-
-.header-item:hover .header-submenu{
-	display: block;
-	position: absolute;
-}
-
-.header-submenu {
-	display: none;
-  border-top: 2px solid 2px;
-	width: inherit;
-	z-index: 100;
-	list-style-type: none;
-  transform: translateX(-20px);
-}
-
-.sub-item {
-  background-color: var(--float-color);
-	position: relative;
-	padding-left: 20px;
-	width: inherit;
-	border-bottom: 1px solid gray;
-	border-left: 1px solid;
-	height: 20px;
-	text-decoration: none;
-  a {
-  	vertical-align: left;
-  }
-}
-
-.sub-item:hover {
-	border-bottom-color: var(--highlight-color);
-	border-left-color: var(--highlight-color);
-}
-
-
 .github-corner:hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out;
+  animation: octocat-wave 1.2s;
 }
 
 @keyframes octocat-wave {
@@ -150,11 +156,23 @@ article {
     transform: rotate(0deg);
   }
 
+  10% {
+    transform: rotate(10deg);
+  }
+
   20% {
     transform: rotate(-25deg);
   }
 
+  30% {
+    transform: rotate(10deg);
+  }
+
   40% {
+   transform: rotate(-25deg);
+  }
+
+  50% {
     transform: rotate(10deg);
   }
 
@@ -162,7 +180,15 @@ article {
    transform: rotate(-25deg);
   }
 
+  70% {
+    transform: rotate(10deg);
+  }
+
   80% {
+   transform: rotate(-25deg);
+  }
+
+  90% {
     transform: rotate(10deg);
   }
 

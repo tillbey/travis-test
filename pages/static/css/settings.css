@@ -1,8 +1,30 @@
 :root {
-  --background-color: orange;
-  --text-color: red;
-  --heading-color: gray;
-  --highlight-color: yellow;
-  --accent-color: pink;
-  --float-color: white;
+  --b_h: 20;
+  --b_s: 80%;
+  --b_l: 60%;
+  --a_h: 200;
+  --a_s: 90%;
+  --a_l: 50%;
+  --a: 1;
+  --base-color: hsla(var(--a_h), calc(var(--b_s) - 30%), calc(var(--b_l) - 50%), var(--a));
+  --text-color: hsla(var(--b_h), var(--b_s), calc(var(--b_l) / 2), var(--a));
+  --heading-color: hsla(var(--b_h), var(--b_s), calc(var(--b_l) - 50%), var(--a));
+
+  --accent-color: hsla(var(--a_h), var(--a_s), var(--a_l), var(--a));
+  --highlight-color: hsla(var(--a_h), var(--a_s), var(--a_l), var(--a));
+  --float-color: hsla(var(--a_h), calc(var(--a_s) / 10), calc(var(--a_l) * 1.8), var(--a));
+
+  --menu-height: 50px;
+
+}
+
+@media (max-width: 600px) {
+  :root {
+    --l: 60%;
+  };
+  .header-menu {
+    display: none;
+    overflow: hidden;
+  }
+
 }
