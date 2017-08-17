@@ -3,9 +3,15 @@
   {{ partial "head.html" . }}
 <body>
   {{ partial "header.html" . }}
+  <aside class="">
+    {{ block "aside" .}}
+    {{ end }}
+  </aside>
+
   <main>
     {{ block "main" .}}
     {{ end }}
   </main>
+
 </body>
 </html>

@@ -1,5 +1,13 @@
 {{ define "main" }}
+  <article class="single">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </article>
+{{ end }}
 
-  {{ .Content }}
-
+{{ define "aside" }}
+  <ul>
+    <li>bla</li>
+    <li>blup</li>
+  </ul>
 {{ end }}

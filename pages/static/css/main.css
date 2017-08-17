@@ -7,25 +7,37 @@ body {
   font-size: 14px;
   display: block;
   margin: 0px;
+  overflow: auto;
 }
 
 aside {
+  top: var(--menu-height);
+  /*height: 100%;*/
   position: fixed;
   float: left;
   background-color: var(--float-color);
-  margin-top: 200px;
+  /*margin-top: 200px;*/
   max-width: 150px;
   text-align: left;
+  display: block;
 }
 
 main {
-  background-color: var(--float-color);
+  background-color: transparent;
   padding: 10px;
-  margin: 20px;
   margin-top: 80px;
-  display: block;
+  /*display: block;*/
   float: right;
+  width: 80%;
+  /*clear: right;*/
+}
+
+aside, article {
+  background-color: var(--float-color);
+  margin: 20px;
+  padding: 50px;
   border-radius: 10px;
+  box-shadow: 3px 5px 5px var(--highlight-color);
 }
 
 img {
@@ -41,19 +53,6 @@ a {
   color: var(--base-color);
 }
 
-article {
-  background-color: var(--float-color);
-  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.4);
-  margin: 20px;
-  padding: 20px;
-}
-
-.summary {
-  background-color: white;
-  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.4);
-  padding: 20px;
-}
-
 header {
   font-size: 16px;
   font-weight: bold;
@@ -65,30 +64,42 @@ header {
 	width: 100%;
 	height: var(--menu-height);
 	z-index: 20;
+  padding: 0px;
+}
+
+nav {
+  /*height: var(--menu-height);*/
+  /*display: block;*/
 }
 
 nav ul {
-  padding: 0;
-  box-sizing: border-box;
-  float: left;
-  display: block;
+  /*height: calc(var(--menu-height) - 10px);*/
+  list-style-type: none;
+  padding: 0px;
+  /*border: 1px solid;*/
 }
 
 nav li {
-  height: 100%;
-  box-sizing: border-box;
-	float: left;
-	padding-left: 20px;
-	padding-right: 20px;
+  /*height: 100%;*/
+  float: left;
+  --submenu-visible: none;
   border: 1px solid;
-	border-top: 5px solid transparent;
   display: block;
-  background-color: var(--float-color);
-  --submenu-visible: none
+  background-color: var(--highlight-color);
+}
+
+nav a {
+
+  text-decoration: none;
+  padding: 20px;
+  color: var(--base-color);
+
+  /*vertical-align: middle;*/
+  /*text-align: center*/
 }
 
 .icon {
-  display: inline-block;
+  /*display: inline-block;*/
   font-family: FontAwesome;
   font-style: normal;
   text-rendering: auto;
@@ -102,9 +113,11 @@ nav li {
   float: left;
 }
 
-.menu {
-  float: left;
-  display: block;
+
+.search {
+  height: 100%;
+  box-sizing: border-box;
+  float: right;
 }
 
 @media (max-width: 800px) {
@@ -134,10 +147,6 @@ nav li {
   display: block;
   float: none;
 }
-
-
-
-
 
 .menu li:hover {
   border-color: red;

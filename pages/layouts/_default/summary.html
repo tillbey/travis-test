@@ -1,4 +1,7 @@
 <article class="summary">
-    <b>{{ .Title }}</b>
-    {{ .Content }}
+  <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+  {{ .Summary }}
+  {{ if .Truncated }}
+    <a href="{{ .RelPermalink }}">Read More…</a>
+  {{ end }}
 </article>
