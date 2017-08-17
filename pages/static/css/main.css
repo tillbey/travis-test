@@ -105,11 +105,11 @@ header {
   }
 }
 
-#navi {
+#navicon {
   display: none;
 }
 
-#navi:checked ~ .menu {
+#navicon:checked ~ .menu {
   display: block;
   float: none;
   width: 200px;
@@ -117,12 +117,18 @@ header {
   margin-top: var(--menu-height);
 }
 
-#navi:checked ~ .menu li {
+#navicon:checked ~ .menu li {
   display: block;
   float: none;
 }
 
-.menu li {
+#navicon:checked ~ li {
+  display: block;
+  float: none;
+  background-color: red;
+}
+
+nav li {
 	height: 100%;
   box-sizing: border-box;
 	float: left;
