@@ -20,8 +20,12 @@ aside {
 
 main {
   background-color: var(--float-color);
+  padding: 10px;
+  margin: 20px;
   margin-top: 80px;
-  margin-left: 150px;
+  display: block;
+  float: right;
+  border-radius: 10px;
 }
 
 img {
@@ -63,6 +67,25 @@ header {
 	z-index: 20;
 }
 
+nav ul {
+  padding: 0;
+  box-sizing: border-box;
+  float: left;
+  display: block;
+}
+
+nav li {
+  height: 100%;
+  box-sizing: border-box;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+  border: 1px solid;
+	border-top: 5px solid transparent;
+  display: block;
+  background-color: var(--float-color);
+  --submenu-visible: none
+}
 
 .icon {
   display: inline-block;
@@ -73,28 +96,16 @@ header {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-top: 10px;
-  margin-left: 0px;
-  float: left;
-	height: calc(var(--menu-height) - 10px);
-  /*width: 100%;*/
-  border: 1px solid;
-  box-sizing: border-box;
-  display: block;
-}
-
 .navicon {
   display: none;
   cursor: pointer;
-  position: fixed;
   float: left;
 }
 
-
+.menu {
+  float: left;
+  display: block;
+}
 
 @media (max-width: 800px) {
   .menu {
@@ -110,11 +121,13 @@ header {
 }
 
 #navicon:checked ~ .menu {
+  margin-top: 0px;
   display: block;
   float: none;
-  width: 200px;
+  width: 150px;
   background-color: var(--float-color);
-  margin-top: var(--menu-height);
+  clear: both;
+
 }
 
 #navicon:checked ~ .menu li {
@@ -122,24 +135,9 @@ header {
   float: none;
 }
 
-#navicon:checked ~ li {
-  display: block;
-  float: none;
-  background-color: red;
-}
 
-nav li {
-	height: 100%;
-  box-sizing: border-box;
-	float: left;
-	padding-left: 20px;
-	padding-right: 20px;
-  border: 1px solid;
-	border-top: 5px solid transparent;
-  display: block;
-  background-color: var(--float-color);
-  --submenu-visible: none
-}
+
+
 
 .menu li:hover {
   border-color: red;
@@ -155,7 +153,6 @@ nav li {
   box-sizing: border-box;
   list-style-type: none;
 	display: var(--submenu-visible);
-  /*padding-top: 30px;*/
   margin-top: 10px;
   position: absolute;
 	width: inherit;
