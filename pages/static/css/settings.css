@@ -20,11 +20,6 @@
 
 @media (max-width: 600px) {
   :root {
-    --l: 60%;
+    --b_h: 60;
   };
-  .header-menu {
-    display: none;
-    overflow: hidden;
-  }
-
 }
