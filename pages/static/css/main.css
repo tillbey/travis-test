@@ -1,44 +1,58 @@
 @import "settings.css";
 
+* {
+  margin: 0px;
+  /*padding: 0px;*/
+}
+
 body {
   background: var(--base-color);
   color: var(--text-color);
   font-family: 'Source Sans Pro', 'sans-serif';
   font-size: 14px;
-  display: block;
+  text-align: justify;
   margin: 0px;
+  padding: 0px;
   overflow: auto;
-}
-
-aside {
-  top: var(--menu-height);
-  /*height: 100%;*/
-  position: fixed;
-  float: left;
-  background-color: var(--float-color);
-  /*margin-top: 200px;*/
-  max-width: 150px;
-  text-align: left;
-  display: block;
 }
 
 main {
   background-color: transparent;
-  padding: 10px;
-  margin-top: 80px;
+  margin: 80px auto;
+  margin-left: 270px;
+  border: 1px solid gray;
   /*display: block;*/
-  float: right;
-  width: 80%;
-  /*clear: right;*/
+  /*float: right;*/
+  /*width: calc(100% - 150px);*/
+  /*float: right;*/
 }
 
 aside, article {
+  border: 1px solid green;
   background-color: var(--float-color);
   margin: 20px;
   padding: 50px;
   border-radius: 10px;
-  box-shadow: 3px 5px 5px var(--highlight-color);
+  /*box-shadow: 3px 5px 5px var(--highlight-color);*/
 }
+
+aside {
+  top: 80px;
+  position: fixed;
+  padding: 10px;
+  /*float: left;*/
+  background-color: var(--float-color);
+  /*margin-top: 200px;*/
+  width: 250px;
+  left: 0px;
+  text-align: left;
+  box-sizing: border-box;
+  /*float: left;*/
+}
+
+
+
+
 
 img {
   max-width: 100%;
@@ -55,45 +69,47 @@ a {
 
 header {
   font-size: 16px;
-  font-weight: bold;
-  background-color: var(--float-color);
-  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.4);
+  font-weight: 900;
+  /*background-color: var(--float-color);*/
+  /*box-shadow: 3px 5px 5px var(--highlight-color);*/
 	position: fixed;
 	top: 0;
-	left: 0;
 	width: 100%;
-	height: var(--menu-height);
+	/*height: var(--menu-height);*/
 	z-index: 20;
   padding: 0px;
 }
 
 nav {
-  /*height: var(--menu-height);*/
-  /*display: block;*/
+  background-color: var(--float-color);
+  box-shadow: 3px 5px 5px var(--highlight-color);
+  height: var(--menu-height);
 }
 
-nav ul {
+nav > ul {
+  /*height: 100%;*/
   /*height: calc(var(--menu-height) - 10px);*/
   list-style-type: none;
   padding: 0px;
+  margin: 0;
   /*border: 1px solid;*/
+
 }
 
 nav li {
-  /*height: 100%;*/
+  height: 100%;
   float: left;
   --submenu-visible: none;
   border: 1px solid;
-  display: block;
-  background-color: var(--highlight-color);
 }
 
 nav a {
-
   text-decoration: none;
-  padding: 20px;
+  /*padding: 20px;*/
   color: var(--base-color);
-
+  background-color: var(--float-color);
+  box-sizing: border-box;
+  display: block;
   /*vertical-align: middle;*/
   /*text-align: center*/
 }
@@ -120,13 +136,9 @@ nav a {
   float: right;
 }
 
-@media (max-width: 800px) {
-  .menu {
-    display: none;
-  }
-  .navicon {
-    display: block;
-  }
+.menu {
+  margin: 0 auto;
+  padding: 0px;
 }
 
 #navicon {
@@ -135,9 +147,11 @@ nav a {
 
 #navicon:checked ~ .menu {
   margin-top: 0px;
-  display: block;
-  float: none;
-  width: 150px;
+  display: inline-block;
+  float: left;
+  /*width: 100%;*/
+  max-width: 400px;
+  /*width: 150px;*/
   background-color: var(--float-color);
   clear: both;
 
@@ -181,8 +195,45 @@ nav a {
 	height: 20px;
 }
 
+.TOC ul {
+  list-style-type: none;
+  padding: 0px;
+  padding-left: 10px;
+}
+
+.TOC li {
+  padding: 0px;
+  margin: 0px;
+}
+
+.TOC a {
+  display: block;
+}
+
+header .TOC {
+  display: none;
+}
+
 .active {
   background-color: var(--accent-color);
+}
+
+@media (max-width: 800px) {
+  header .menu {
+    display: none;
+  }
+  .navicon {
+    display: block;
+  }
+  aside {
+    display: none;
+  }
+  main {
+    margin-left: 0px;
+  }
+  header .TOC {
+    display: inline-block;
+  }
 }
 
 .github-corner:hover .octo-arm {

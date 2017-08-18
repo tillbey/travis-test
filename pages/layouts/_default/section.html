@@ -3,3 +3,7 @@
       {{ .Render "summary" }}
   {{ end }}
 {{ end}}
+
+{{ define "aside" }}
+  {{ partial "menu.html" . }}
+{{ end }}

@@ -1,6 +1,5 @@
 ---
 title: bla
-type: section
 draft: false
 menu:
   main:

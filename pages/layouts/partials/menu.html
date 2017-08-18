@@ -5,13 +5,18 @@
         <a href="{{ .URL }}">{{ .Name }}</a>
         {{ if .HasChildren }}
           <ul class="submenu">
-          {{ range .Children }}
-            <li>
-              <a href="{{ $currentPage.Site.BaseURL }}{{ .URL }}">{{ .Name }}</a>
-            </li>
-          {{ end }}
+            {{ range .Children }}
+              <li>
+                <a href="{{ $currentPage.Site.BaseURL }}{{ .URL }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
           </ul>
+        {{ end }}
+        {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+          <ul class="TOC">
+            {{ $currentPage.TableOfContents }}
+          </ul>
+        {{ end }}
       </li>
-    {{ end }}
   {{ end }}
 </ul>
