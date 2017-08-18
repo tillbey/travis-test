@@ -1,16 +1,14 @@
 ---
-title: bla
+title: Tahiti – Interactive image analysis
 draft: false
 menu:
   main:
-    name: blup
+    name: Tahiti
     identifier: blup
     weight: 1
     URL: /docs/blup/
     parent: docs
 ---
-
-# Tahiti – Interactive image analysis
 
 ## Goals
 - close the gap between image analysis libraries and ImageJ style point and click programs

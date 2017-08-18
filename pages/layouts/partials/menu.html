@@ -8,13 +8,13 @@
             {{ range .Children }}
               <li>
                 <a href="{{ $currentPage.Site.BaseURL }}{{ .URL }}">{{ .Name }}</a>
+                {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent .Parent .) }}
+                  <ul class="TOC">
+                    {{ $currentPage.TableOfContents }}
+                  </ul>
+                {{ end }}
               </li>
             {{ end }}
-          </ul>
-        {{ end }}
-        {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-          <ul class="TOC">
-            {{ $currentPage.TableOfContents }}
           </ul>
         {{ end }}
       </li>
