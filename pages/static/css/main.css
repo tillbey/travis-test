@@ -250,6 +250,9 @@ header .TOC {
   header .TOC {
     display: inline-block;
   }
+  .submenu {
+    position: relative;
+  }
 }
 
 .github-corner:hover .octo-arm {
