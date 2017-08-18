@@ -2,7 +2,9 @@
   <h1>Home page</h1>
       {{ .Content }}
     {{ range .Data.Pages }}
-      {{ .Render "summary" }}
+      <section>
+        {{ .Title }}
+      </section>
     {{ end }}
 {{ end }}
 

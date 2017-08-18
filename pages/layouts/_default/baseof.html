@@ -2,11 +2,12 @@
 <html>
   {{ partial "head.html" . }}
 <body>
+
   {{ partial "header.html" . }}
-  <aside class="">
-    {{ block "aside" .}}
-    {{ end }}
-  </aside>
+
+  {{ block "aside" .}}
+  {{ end }}
+
   <main>
     {{ block "main" .}}
     {{ end }}

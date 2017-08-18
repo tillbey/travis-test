@@ -1,12 +1,10 @@
 <header>
   <nav class="header-menu">
-      <ul>
-        <li class="navicon"><label class="icon" for="navicon">&#xf0c9;</label></li>
-        <li><a href="{{ .Site.BaseURL }}" class="logo">Home</a></li>
-        <input type="checkbox" id="navicon"/>
-        {{ partial "menu.html" . }}
-        <li class="search"><a href="{{ .Site.BaseURL }}/search" class="icon">&#xf002;</a></li>
-      </ul>
+      <label class="navicon icon" for="navicon">&#xf0c9;</label>
+      <a href="{{ .Site.BaseURL }}" class="logo">Home</a>
+      <input type="checkbox" id="navicon"/>
+      {{ partial "menu.html" . }}
+      <a href="{{ .Site.BaseURL }}/search" class="search icon">&#xf002;</a>
   </nav>
 </header>
 

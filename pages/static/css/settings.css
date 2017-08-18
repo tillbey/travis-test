@@ -1,25 +1,54 @@
+
+
+
+
 :root {
-  --b_h: 20;
-  --b_s: 80%;
-  --b_l: 60%;
-  --a_h: 200;
-  --a_s: 90%;
+  --ratio: 1.62;
+  --M0: 1;
+  --M1: calc(var(--M0) * var(--ratio));
+  --M2: calc(var(--M1) * var(--ratio));
+  --M3: calc(var(--M2) * var(--ratio));
+  --M4: calc(var(--M3) * var(--ratio));
+
+  --m0: 1;
+  --m1: calc(var(--m0) / var(--ratio));
+  --m2: calc(var(--m1) / var(--ratio));
+  --m3: calc(var(--m2) / var(--ratio));
+  --m4: calc(var(--m3) / var(--ratio));
+
+  --b_h: 210;
+  --b_s: 100%;
+  --b_l: 50%;
+  --a_h: 0;
+  --a_s: 50%;
   --a_l: 50%;
   --a: 1;
-  --base-color: hsla(var(--a_h), calc(var(--b_s) - 30%), calc(var(--b_l) - 50%), var(--a));
-  --text-color: hsla(var(--b_h), var(--b_s), calc(var(--b_l) / 2), var(--a));
-  --heading-color: hsla(var(--b_h), var(--b_s), calc(var(--b_l) - 50%), var(--a));
 
+/*                   */
+  --theme-color: hsla(var(--b_h), var(--b_s), var(--b_l), var(--a));
+
+  --light-front-color: hsla(var(--b_h), calc(var(--b_s) * var(--m1)), calc(var(--b_l) * var(--M2)), var(--a));
+  --front-color: hsla(var(--b_h), calc(var(--b_s) * var(--m1)), calc(var(--b_l) * var(--M1)), var(--a));
+  --dark-front-color: hsla(var(--b_h), calc(var(--b_s) * var(--m1)), calc(var(--b_l) * var(--M0)), var(--a));
+
+  --light-back-color: hsla(var(--b_h), calc(var(--b_s) * var(--m3)), calc(var(--b_l) * var(--m0)), var(--a));
+  --back-color: hsla(var(--b_h), calc(var(--b_s) * var(--m3)), calc(var(--b_l) * var(--m1)), var(--a));
+  --dark-back-color: hsla(var(--b_h), calc(var(--b_s) * var(--m3)), calc(var(--b_l) * var(--m2)), var(--a));
+
+
+/*                   */
   --accent-color: hsla(var(--a_h), var(--a_s), var(--a_l), var(--a));
   --highlight-color: hsla(var(--a_h), var(--a_s), var(--a_l), var(--a));
-  --float-color: hsla(var(--a_h), calc(var(--a_s) / 10), calc(var(--a_l) * 1.8), var(--a));
+
+  --background-color: var(--back-color);
+  --text-color: var(--dark-back-color);
+  --heading-color: var(--light-back-color);
+  --shadow-color: var(--dark-back-color);
+
+  --float-color: var(--light-front-color);
+  --menu-color: var(--front-color);
+  --edge-color: var(--dark-front-color);
 
   --menu-height: 50px;
 
-}
-
-@media (max-width: 600px) {
-  :root {
-    --b_h: 60;
-  };
 }
