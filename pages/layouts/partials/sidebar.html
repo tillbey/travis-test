@@ -2,7 +2,7 @@
   <nav>
     {{ range .Site.Sections }}
       {{ if hasPrefix $.URL .URL }}
-        <h1>{{ .Title }}</h1>
+        <a href="{{ .URL }}"><h1>{{ .Title }}</h1></a>
         {{ partial "submenu.html" . }}
       {{ end }}
     {{ end }}

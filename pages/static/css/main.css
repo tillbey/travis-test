@@ -102,6 +102,7 @@ nav ul {
 nav li {
   float: left;
   position: relative;
+  z-index: 1;
 }
 
 nav a {
@@ -109,6 +110,7 @@ nav a {
   color: var(--text-color);
   box-sizing: border-box;
   display: block;
+  z-index: 10;
   /*border: 1px solid;*/
 }
 
@@ -121,28 +123,35 @@ header a {
 
 .navicon {
   display: none;
-  cursor: pointer;
-  width: var(--menu-height);
   float: left;
-  color: var(--text-color);
-  text-align: center;
 }
 
 .logo {
+  float: left;
+  padding: 0px;
+}
+
+.logo > img {
   height: 100%;
-  box-sizing: border-box;
+  float: left;
+}
+
+.logo > span {
+  padding: 15px 30px 0 0;
   float: left;
 }
 
 .search {
-  height: 100%;
-  box-sizing: border-box;
   float: right;
 }
 
 nav a:hover {
-  border-color: red;
+  color: var(--dark-front-color);
   background-color: var(--theme-color);
+}
+
+nav a:active {
+  background-color: var(--highlight-color);
 }
 
 nav li:hover > ul.submenu {
@@ -243,6 +252,7 @@ header .TOC {
 }
 
 .active {
+  color: var(--dark-front-color);
   background-color: var(--theme-color);
 }
 
@@ -265,15 +275,21 @@ header .TOC {
   .submenu {
     position: relative;
   }
+  .logo {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 aside .submenu {
   display: block;
 }
 
+
 .github-corner:hover .octo-arm {
   animation: octocat-wave 1.2s;
 }
+
 
 @keyframes octocat-wave {
   0% {

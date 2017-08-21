@@ -25,7 +25,7 @@
   --a: 1;
 
 /*                   */
-  --theme-color: hsla(var(--b_h), var(--b_s), var(--b_l), var(--a));
+  /*--theme-color: hsla(var(--b_h), var(--b_s), var(--b_l), var(--a));
 
   --light-front-color: hsla(var(--b_h), calc(var(--b_s) * var(--m1)), calc(var(--b_l) * var(--M2)), var(--a));
   --front-color: hsla(var(--b_h), calc(var(--b_s) * var(--m1)), calc(var(--b_l) * var(--M1)), var(--a));
@@ -33,12 +33,25 @@
 
   --light-back-color: hsla(var(--b_h), calc(var(--b_s) * var(--m3)), calc(var(--b_l) * var(--m0)), var(--a));
   --back-color: hsla(var(--b_h), calc(var(--b_s) * var(--m3)), calc(var(--b_l) * var(--m1)), var(--a));
-  --dark-back-color: hsla(var(--b_h), calc(var(--b_s) * var(--m3)), calc(var(--b_l) * var(--m2)), var(--a));
+  --dark-back-color: hsla(var(--b_h), calc(var(--b_s) * var(--m3)), calc(var(--b_l) * var(--m2)), var(--a));*/
+
+  --theme-color: hsl(214, 42%, 33%);
+
+  --light-front-color: white;
+  --front-color: white;
+  --dark-front-color: rgb(207, 206, 199);
+
+  --light-back-color: rgb(139, 135, 133);
+  --back-color: hsl(214, 42%, 34%);
+  --dark-back-color: rgb(24, 25, 29);
+
+  --accent-color: hsl(229, 59%, 37%);
+  --highlight-color: rgb(189, 55, 60);
 
 
 /*                   */
-  --accent-color: hsla(var(--a_h), var(--a_s), var(--a_l), var(--a));
-  --highlight-color: hsla(var(--a_h), var(--a_s), var(--a_l), var(--a));
+  /*--accent-color: hsla(var(--a_h), var(--a_s), var(--a_l), var(--a));
+  --highlight-color: hsla(var(--a_h), var(--a_s), var(--a_l), var(--a));*/
 
   --background-color: var(--back-color);
   --text-color: var(--dark-back-color);

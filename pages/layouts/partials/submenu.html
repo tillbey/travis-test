@@ -3,7 +3,7 @@
     <li class="{{ if hasPrefix $.URL .URL }}active{{ end }}">
       <a href="{{ .URL }}">{{ .Title }}</a>
       {{ if hasPrefix $.URL .URL }}
-        <ul class="pagemenu">
+        <ul class="submenu">
           {{ range sort .Pages }}
             <li class="{{ if eq $.URL .URL }}active{{ end }}">
               <a href="{{ .URL }}">{{ .Title }}</a>
