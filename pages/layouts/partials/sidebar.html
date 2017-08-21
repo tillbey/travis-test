@@ -1,5 +1,10 @@
 <aside class="nav">
   <nav>
-    {{ partial "menu.html" . }}
+    {{ range .Site.Sections }}
+      {{ if hasPrefix $.URL .URL }}
+        <h1>{{ .Title }}</h1>
+        {{ partial "submenu.html" . }}
+      {{ end }}
+    {{ end }}
   </nav>
 </aside>

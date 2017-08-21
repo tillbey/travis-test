@@ -1,5 +1,7 @@
 {{ define "main"}}
+  {{ .Content }}
   {{ range .Data.Pages }}
+      {{ .Params.id }}
       {{ .Render "summary" }}
   {{ end }}
 {{ end}}

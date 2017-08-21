@@ -1,13 +1,6 @@
 ---
 title: Tahiti – Interactive image analysis
 draft: false
-menu:
-  main:
-    name: Tahiti
-    identifier: blup
-    weight: 1
-    URL: /docs/blup/
-    parent: docs
 ---
 
 ## Goals

@@ -1,5 +1,5 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
+title: blabliblup
 date: {{ .Date }}
 draft: false
 menu:

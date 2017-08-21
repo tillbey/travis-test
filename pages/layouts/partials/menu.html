@@ -1,22 +1,8 @@
 <ul class="menu">
-  {{ $currentPage := .}}
-  {{ range .Site.Menus.main }}
-      <li class="{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}">
-        <a href="{{ .URL }}">{{ .Name }}</a>
-        {{ if .HasChildren }}
-          <ul class="submenu">
-            {{ range .Children }}
-              <li>
-                <a href="{{ $currentPage.Site.BaseURL }}{{ .URL }}">{{ .Name }}</a>
-                {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent .Parent .) }}
-                  <ul class="TOC">
-                    {{ $currentPage.TableOfContents }}
-                  </ul>
-                {{ end }}
-              </li>
-            {{ end }}
-          </ul>
-        {{ end }}
+  {{ range sort .Site.Sections ".Params.weight"}}
+      <li class="{{ if hasPrefix $.URL .URL }}active{{ end }}">
+        <a href="{{ .URL }}">{{ .Title }}</a>
+          {{ partial "submenu.html" . }}
       </li>
   {{ end }}
 </ul>

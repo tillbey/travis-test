@@ -1,8 +1,9 @@
 ---
 date: "2016-12-05T14:41:00+01:00"
-title: "Blog"
+title: Developers
 author: "me"
 draft: false
-type: "section"
 weight: 2
 ---
+
+This is the developer's reference.

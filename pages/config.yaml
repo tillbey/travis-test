@@ -1,29 +1,4 @@
 baseurl: "https://tillbey.github.io/travis-test/"
 # theme: "hugo-bootstrap-premium"
 metaDataFormat: yaml
-sectionPagesMenu: main
 canonifyURLs: true
-
-
-menu:
-     main:
-      - name: "Downloads"
-        weight: 1
-        identifier: "downloads"
-        URL: /downloads
-      - name: "Documentation"
-        weight: 2
-        identifier: "docs"
-        URL: /docs
-      - name: "Pipelines"
-        identifier: pipelines
-        weight: 3
-        URL: /pipelines
-      - name: "Blog"
-        identifier: "posts"
-        weight: 4
-        URL: /posts
-      - name: "Github"
-        identifier: "github"
-        weight: 6
-        URL: https://github.com/tillbey/travis-test

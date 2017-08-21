@@ -1,3 +1,5 @@
+---
+id: r4h3
 name: Test pipeline
 author: Till Bey
 
@@ -6,3 +8,4 @@ pipeline:
     - Gaussian filter
     - Threshold
     - Volume measurement
+---
