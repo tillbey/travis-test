@@ -4,5 +4,5 @@ title: "Blog"
 author: "me"
 draft: false
 type: "section"
-weight: 2
+weight: 4
 ---

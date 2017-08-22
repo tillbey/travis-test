@@ -65,6 +65,12 @@ aside, article, section {
   box-shadow: 5px 5px 10px var(--shadow-color);
 }
 
+section {
+  border-radius: 3px;
+  box-shadow: none;
+  border: none;
+}
+
 aside {
   top: calc(var(--menu-height) + 3 * var(--float-margins));
   position: fixed;

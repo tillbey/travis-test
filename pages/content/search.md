@@ -1,6 +1,7 @@
 ---
 title: "Site search"
-
+type: search
+layout: section
 ---
 
 
