@@ -304,6 +304,10 @@ nav li.active > a {
     --float-margins: 5px;
   }
 
+  article {
+    padding: var(--float-margins) 10px;
+  }
+
   header .menu {
     display: none;
   }
