@@ -90,7 +90,7 @@ header {
 
 header nav {
   padding: 0px 30px;
-  padding-top: 10px;
+  padding-top: var(--menu-padding);
   height: var(--menu-height);
 }
 
@@ -166,6 +166,7 @@ nav a:active {
 
 nav li:hover > ul.submenu {
   display: block;
+  float: none;
 }
 
 .submenu {
@@ -183,6 +184,20 @@ nav li:hover > ul.submenu {
 
 .submenu a {
   color: var(--text-color);
+}
+
+header .submenu {
+  border: 1px solid var(--edge-color);
+  border-top: none;
+  margin-left: -1px;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+header .submenu a {
+  box-sizing: border-box;
+  padding: 5px 15px;
+  height: 30px;
 }
 
 #TableOfContents {
@@ -220,32 +235,20 @@ aside .submenu {
   display: none;
 }
 
-#navicon:checked ~ .menu {
-  position: absolute;
-  top: calc(var(--menu-height) + 10px);
-  display: block;
-  max-width: 400px;
-}
-
-#navicon:checked ~ .menu li {
-  display: block;
-  float: none;
-}
-
-#navicon:checked ~ .menu a {
-  height: 100%;
-  color: var(--edge-color);
-  background-color: var(--theme-color);
-}
-
-/*li.active {
-  background-color: pink;
-}*/
-
 .active > a {
   color: var(--edge-color);
   background-color: var(--theme-color);
 }
+
+/*@media (min-width: 600px) {
+  header ul {
+    top: 100px;
+    position: relative;
+  }
+  header li {
+    float: left;
+  }
+}*/
 
 @media (max-width: 800px) {
   aside {
@@ -270,11 +273,18 @@ aside .submenu {
     padding-right: 0;
   }
 
+  nav li:hover ul.submenu {
+    margin-top: -10px;
+  }
+
   .navicon {
     display: block;
   }
-  .submenu {
+
+  header .submenu {
     position: relative;
+    margin: 0;
+    border: none;
   }
 
   .logo {
@@ -283,15 +293,33 @@ aside .submenu {
     float: none;
     margin: 0 auto;
   }
+
+  #navicon:checked ~ .menu {
+    position: absolute;
+    top: calc(var(--menu-height) + var(--menu-padding));
+    display: block;
+    max-width: 400px;
+  }
+
+  #navicon:checked ~ .menu li {
+    display: block;
+    float: none;
+  }
+
+  #navicon:checked ~ .menu a {
+    height: 100%;
+    color: var(--edge-color);
+    background-color: var(--theme-color);
+  }
+
+  #navicon:checked ~ .menu a:hover {
+    background-color: var(--highlight-color);
+  }
 }
 
 @media (max-height: 600px) {
-  /*:root {
-    --menu-height: 40px;
-  }*/
-
-  header nav {
-    padding-top: 0;
+  :root {
+    --menu-padding: 0px;
   }
 }
 
