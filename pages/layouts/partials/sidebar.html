@@ -3,7 +3,25 @@
     {{ range .Site.Sections }}
       {{ if hasPrefix $.URL .URL }}
         <a href="{{ .URL }}"><h1>{{ .Title }}</h1></a>
-        {{ partial "submenu.html" . }}
+        <ul class="submenu">
+          {{ range sort .Sections ".Params.weight" }}
+            <li class="{{ if eq $.URL .URL }}active{{ end }}">
+              <a href="{{ .URL }}">{{ .Title }}</a>
+              {{ if hasPrefix $.URL .URL }}
+                <ul class="submenu">
+                  {{ range sort .Pages }}
+                    <li class="{{ if eq $.URL .URL }}active{{ end }}">
+                      <a href="{{ .URL }}">{{ .Title }}</a>
+                      {{ if eq $.URL .URL }}
+                        {{ .TableOfContents }}
+                      {{ end }}
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </li>
+          {{ end }}
+        </ul>
       {{ end }}
     {{ end }}
   </nav>

@@ -35,7 +35,7 @@
   --back-color: hsla(var(--b_h), calc(var(--b_s) * var(--m3)), calc(var(--b_l) * var(--m1)), var(--a));
   --dark-back-color: hsla(var(--b_h), calc(var(--b_s) * var(--m3)), calc(var(--b_l) * var(--m2)), var(--a));*/
 
-  --theme-color: hsl(214, 42%, 33%);
+  --theme-color: rgb(80, 141, 177);
 
   --light-front-color: white;
   --front-color: white;
@@ -63,5 +63,7 @@
   --edge-color: var(--dark-front-color);
 
   --menu-height: 50px;
-
+  --sidebar-width: 200px;
+  --float-margins: 10px;
+  --logo-size: 30px;
 }

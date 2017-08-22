@@ -39,26 +39,28 @@ h1, h2, h3, h4 {
 
 main {
   background-color: transparent;
-  margin: 80px auto;
-  margin-left: 270px;
-  border: 1px solid gray;
+  margin: calc(var(--menu-height) + 4 * var(--float-margins)) auto;
+  margin-left: calc(var(--sidebar-width) + 2 * var(--float-margins));
+  margin-right: var(--float-margins)
+  /*border: 1px solid gray;*/
 }
 
 aside, article, section {
   background-color: var(--float-color);
-  margin: 10px;
-  padding: 10px 40px;
+  margin: var(--float-margins);
+  padding: var(--float-margins) 40px;
   border-radius: 10px;
   border: 1px solid var(--edge-color);
   box-shadow: 5px 5px 10px var(--shadow-color);
 }
 
 aside {
-  top: 80px;
+  top: calc(var(--menu-height) + 3 * var(--float-margins));
   position: fixed;
   padding: 0px;
+  padding-bottom: 10px;
   background-color: var(--float-color);
-  width: 250px;
+  width: var(--sidebar-width);
   left: 0px;
   text-align: left;
   box-sizing: border-box;
@@ -124,6 +126,7 @@ header a {
 .navicon {
   display: none;
   float: left;
+  /*border: 1px solid;*/
 }
 /*
 .navicon label {
@@ -137,8 +140,8 @@ header a {
 }
 
 .logo > img {
-  height: 170%;
-  margin: -20px 0 0 -15px;
+  height: calc(var(--menu-height) + 10px);
+  margin: -20px 0 -10px -15px;
   float: left;
 }
 
@@ -152,40 +155,18 @@ header a {
 }
 
 nav a:hover {
-  color: var(--dark-front-color);
+  color: var(--edge-color);
   background-color: var(--theme-color);
 }
 
 nav a:active {
+  color: var(--edge-color);
   background-color: var(--highlight-color);
 }
 
 nav li:hover > ul.submenu {
   display: block;
 }
-
-aside {
-  padding: 0px;
-}
-
-aside li {
-  display: block;
-  float: none;
-}
-
-aside li {
-  /*border-top: 1px solid white;*/
-  /*border-bottom: 1px solid lightblue;*/
-}
-
-/*aside li:first-of-type a {
-  border-radius: 7px;
-  background-color: red;
-  border-top: none;
-}
-aside li:last-of-type {
-  border-bottom: none;
-}*/
 
 .submenu {
 	display: none;
@@ -196,42 +177,44 @@ aside li:last-of-type {
 
 .submenu > li {
 	width: 100%;
-	border-right: 2px solid transparent;
+  background-color: var(--menu-color);
+  font-weight: bold;
 }
 
 .submenu a {
-  background-color: var(--menu-color);
+  color: var(--text-color);
+}
+
+#TableOfContents {
+  font-weight: lighter;
+}
+
+aside ul {
+  display: block;
+  float: none;
+}
+
+aside li {
+  box-sizing: border-box;
+  display: block;
+  padding-left: 10px;
+  float: none;
+}
+
+aside h1 {
+  margin: 12px;
+  text-align: center;
 }
 
 aside .submenu {
   position: relative;
-  display: block;
+  display: inline;
 }
 
-
-#TableOfContents ul {
-  display: block;
-  float: none;
+.pagemenu {
+  position: relative;
+  display: inline;
 }
-
-#TableOfContents li {
-  padding-left: 10px;
-  display: block;
-  float: none;
-  background-color: pink;
-}
-
-
-/*
-.TOC li {
-  float: left;
-  padding: 0px;
-  margin: 0px;
-}
-
-header .TOC {
-  display: none;
-}*/
 
 #navicon {
   display: none;
@@ -239,11 +222,8 @@ header .TOC {
 
 #navicon:checked ~ .menu {
   position: absolute;
-  top: var(--menu-height);
-  margin-top: 0px;
+  top: calc(var(--menu-height) + 10px);
   display: block;
-  /*float: left;*/
-  /*width: 100%;*/
   max-width: 400px;
 }
 
@@ -254,39 +234,64 @@ header .TOC {
 
 #navicon:checked ~ .menu a {
   height: 100%;
-  background-color: var(--menu-color);
+  color: var(--edge-color);
+  background-color: var(--theme-color);
 }
 
-.active {
-  color: var(--dark-front-color);
+/*li.active {
+  background-color: pink;
+}*/
+
+.active > a {
+  color: var(--edge-color);
   background-color: var(--theme-color);
 }
 
 @media (max-width: 800px) {
-  header .menu {
-    display: none;
-  }
-  .navicon {
-    display: block;
-  }
   aside {
     display: none;
   }
   main {
-    margin-left: 0px;
+    margin-left: var(--float-margins);
   }
-  header .TOC {
-    display: inline-block;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --float-margins: 5px;
+  }
+
+  header .menu {
+    display: none;
+  }
+
+  header nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navicon {
+    display: block;
   }
   .submenu {
     position: relative;
   }
 
   .logo {
-    width: 110px;
+    width: 120px;
     display: block;
     float: none;
     margin: 0 auto;
+  }
+}
+
+@media (max-height: 600px) {
+  /*:root {
+    --menu-height: 40px;
+  }*/
+
+  header nav {
+    padding-top: 0;
   }
 }
 

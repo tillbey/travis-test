@@ -2,7 +2,13 @@
   {{ range sort .Site.Sections ".Params.weight"}}
       <li class="{{ if hasPrefix $.URL .URL }}active{{ end }}">
         <a href="{{ .URL }}">{{ .Title }}</a>
-          {{ partial "submenu.html" . }}
+        <ul class="submenu">
+          {{ range sort .Sections ".Params.weight" }}
+            <li class="{{ if hasPrefix $.URL .URL }}active{{ end }}">
+              <a href="{{ .URL }}">{{ .Title }}</a>
+            </li>
+          {{ end }}
+        </ul>
       </li>
   {{ end }}
 </ul>
