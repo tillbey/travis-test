@@ -8,7 +8,7 @@
             <li class="{{ if eq $.URL .URL }}active{{ end }}">
               <a href="{{ .URL }}">{{ .Title }}</a>
               {{ if hasPrefix $.URL .URL }}
-                <ul class="submenu">
+                <ul class="pagemenu">
                   {{ range sort .Pages }}
                     <li class="{{ if eq $.URL .URL }}active{{ end }}">
                       <a href="{{ .URL }}">{{ .Title }}</a>

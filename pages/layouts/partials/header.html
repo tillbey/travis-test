@@ -1,7 +1,7 @@
 <header>
   <nav class="header-menu">
-      <a class="menui navicon" href="#"><label class="icon" for="navicon">&#xf0c9;</label></a>
       <input type="checkbox" id="navicon"/>
+      <a class="navicon menui" href="#"><label class="icon" for="navicon">&#xf0c9;</label></a>
       <a href="{{ .Site.BaseURL }}search" class="menui search icon">&#xf002;</a>
       <a href="{{ .Site.BaseURL }}" class="menui logo"><img src="/images/logo.png" alt="Home"><span>Tahiti</span></a>
       {{ partial "menu.html" . }}

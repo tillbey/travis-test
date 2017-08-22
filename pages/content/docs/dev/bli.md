@@ -3,7 +3,6 @@ title: Developer reference 2
 draft: false
 ---
 
-# sdhnd n
 bdgb
 fdfb
 

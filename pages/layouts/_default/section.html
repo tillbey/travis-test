@@ -1,5 +1,5 @@
 {{ define "main"}}
-  {{ .Content }}
+  {{ partial "content.html" . }}
   {{ range .Data.Pages }}
       {{ .Params.id }}
       {{ .Render "summary" }}
