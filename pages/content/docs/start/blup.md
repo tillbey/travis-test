@@ -1,6 +1,10 @@
 ---
 title: Tahiti – Interactive image analysis
 draft: false
+ouputs:
+  page:
+    - HTML
+    - JSON
 ---
 
 ## Goals
