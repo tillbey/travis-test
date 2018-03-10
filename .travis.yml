@@ -32,6 +32,8 @@ os: linux
   # - pip3 install pytest
   # - pip3 install .
   # - brew install hugo
+before_install:
+- echo -e "machine github.com\n  login $GITHUB_TOKEN" >> ~/.netrc
 
 script:
   # - pytest
