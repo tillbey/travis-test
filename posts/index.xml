@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on </title>
+    <link>https://tillbey.github.io/travis-test/posts/</link>
+    <description>Recent content in Blog on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 05 Dec 2016 14:41:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://tillbey.github.io/travis-test/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduktion</title>
+      <link>https://tillbey.github.io/travis-test/posts/introduction.sv/</link>
+      <pubDate>Mon, 05 Dec 2016 12:29:19 +0100</pubDate>
+      
+      <guid>https://tillbey.github.io/travis-test/posts/introduction.sv/</guid>
+      <description>En rubrik Text om ämnet ett.</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://tillbey.github.io/travis-test/posts/introduction/</link>
+      <pubDate>Thu, 21 Apr 2016 02:50:28 +0200</pubDate>
+      
+      <guid>https://tillbey.github.io/travis-test/posts/introduction/</guid>
+      <description>Hugo is written in Go with support for multiple platforms.
+The latest release can be found at Hugo Releases. We currently provide pre-built binaries for &amp;nbsp;Windows, &amp;nbsp;Linux, &amp;nbsp;FreeBSD and &amp;nbsp;OS&amp;nbsp;X (Darwin) for x64, i386 and ARM architectures.
+Hugo may also be compiled from source wherever the Go compiler tool chain can run, e.g. for other operating systems including DragonFly BSD, OpenBSD, Plan&amp;nbsp;9 and Solaris. See http://golang.org/doc/install/source for the full set of supported combinations of target operating systems and compilation architectures.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Get started on </title>
+    <link>https://tillbey.github.io/travis-test/docs/start/</link>
+    <description>Recent content in Get started on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 05 Dec 2016 14:41:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://tillbey.github.io/travis-test/docs/start/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tahiti – Interactive image analysis</title>
+      <link>https://tillbey.github.io/travis-test/docs/start/blup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tillbey.github.io/travis-test/docs/start/blup/</guid>
+      <description>Goals  close the gap between image analysis libraries and ImageJ style point and click programs easy chaining together of compatible analysis steps provide full support for 3D image stacks, channels, batches use existing libraries for analysis and display, allowing to tap into the data at any point with standard Python code  To do reimplement graphical user interface in Enaml to avoid double model layer of pyqtgraph and Tahiti use Atom classes for parameters and setting display modules in pipeline panel integrate with image viewer  build an interactive matplotlib module make enaml aware of matplotlib events plotted points refer back to picture  use pandas with multiindex for storing batch data, including images open images into a pandas dataframe   Underlying architecture The basic unit of Tahiti is the module, which is at the same time a Python module.</description>
+    </item>
+    
+  </channel>
+</rss>

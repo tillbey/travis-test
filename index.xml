@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bla on </title>
+    <link>https://tillbey.github.io/travis-test/</link>
+    <description>Recent content in bla on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 05 Dec 2016 14:41:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://tillbey.github.io/travis-test/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>test2</title>
+      <link>https://tillbey.github.io/travis-test/downloads/downloads/</link>
+      <pubDate>Mon, 05 Dec 2016 14:41:00 +0100</pubDate>
+      
+      <guid>https://tillbey.github.io/travis-test/downloads/downloads/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introduktion</title>
+      <link>https://tillbey.github.io/travis-test/posts/introduction.sv/</link>
+      <pubDate>Mon, 05 Dec 2016 12:29:19 +0100</pubDate>
+      
+      <guid>https://tillbey.github.io/travis-test/posts/introduction.sv/</guid>
+      <description>En rubrik Text om ämnet ett.</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://tillbey.github.io/travis-test/posts/introduction/</link>
+      <pubDate>Thu, 21 Apr 2016 02:50:28 +0200</pubDate>
+      
+      <guid>https://tillbey.github.io/travis-test/posts/introduction/</guid>
+      <description>Hugo is written in Go with support for multiple platforms.
+The latest release can be found at Hugo Releases. We currently provide pre-built binaries for &amp;nbsp;Windows, &amp;nbsp;Linux, &amp;nbsp;FreeBSD and &amp;nbsp;OS&amp;nbsp;X (Darwin) for x64, i386 and ARM architectures.
+Hugo may also be compiled from source wherever the Go compiler tool chain can run, e.g. for other operating systems including DragonFly BSD, OpenBSD, Plan&amp;nbsp;9 and Solaris. See http://golang.org/doc/install/source for the full set of supported combinations of target operating systems and compilation architectures.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tillbey.github.io/travis-test/pipelines/one/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tillbey.github.io/travis-test/pipelines/one/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tillbey.github.io/travis-test/pipelines/one8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tillbey.github.io/travis-test/pipelines/one8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Developer reference</title>
+      <link>https://tillbey.github.io/travis-test/docs/dev/bla-kopie-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tillbey.github.io/travis-test/docs/dev/bla-kopie-2/</guid>
+      <description>bdgb fdfb
+ dsng gngfnb  ssecond a vafdvfadsvdAuf dieser Seite finden Sie eine Liste aller Standard HTML5-Elemente, beschrieben durch ihr öffnendes Tag, nach Funktion gruppiert. Diese Liste enthält ausschließlich die gültigen HTML5-Elemente. In neuen Websites sollten nur die hier aufgezählten Tags verwendet werden. Eine komplette Liste aller HTML-Elemente finden Sie im Index aller HTML-Elemente. Dieser enthält sämtliche möglichen Tags: standardisierte, nicht-standardkonforme, gültige, obsolete und als veraltet (&amp;ldquo;deprecated&amp;rdquo;) betrachtete.Auf dieser Seite finden Sie eine Liste aller Standard HTML5-Elemente, beschrieben durch ihr öffnendes Tag, nach Funktion gruppiert.</description>
+    </item>
+    
+    <item>
+      <title>Developer reference</title>
+      <link>https://tillbey.github.io/travis-test/docs/dev/bla-kopie-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tillbey.github.io/travis-test/docs/dev/bla-kopie-3/</guid>
+      <description>bdgb fdfb
+ dsng gngfnb  ssecond a vafdvfadsvdAuf dieser Seite finden Sie eine Liste aller Standard HTML5-Elemente, beschrieben durch ihr öffnendes Tag, nach Funktion gruppiert. Diese Liste enthält ausschließlich die gültigen HTML5-Elemente. In neuen Websites sollten nur die hier aufgezählten Tags verwendet werden. Eine komplette Liste aller HTML-Elemente finden Sie im Index aller HTML-Elemente. Dieser enthält sämtliche möglichen Tags: standardisierte, nicht-standardkonforme, gültige, obsolete und als veraltet (&amp;ldquo;deprecated&amp;rdquo;) betrachtete.Auf dieser Seite finden Sie eine Liste aller Standard HTML5-Elemente, beschrieben durch ihr öffnendes Tag, nach Funktion gruppiert.</description>
+    </item>
+    
+    <item>
+      <title>Developer reference</title>
+      <link>https://tillbey.github.io/travis-test/docs/dev/bla-kopie-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tillbey.github.io/travis-test/docs/dev/bla-kopie-4/</guid>
+      <description>bdgb fdfb
+ dsng gngfnb  ssecond a vafdvfadsvdAuf dieser Seite finden Sie eine Liste aller Standard HTML5-Elemente, beschrieben durch ihr öffnendes Tag, nach Funktion gruppiert. Diese Liste enthält ausschließlich die gültigen HTML5-Elemente. In neuen Websites sollten nur die hier aufgezählten Tags verwendet werden. Eine komplette Liste aller HTML-Elemente finden Sie im Index aller HTML-Elemente. Dieser enthält sämtliche möglichen Tags: standardisierte, nicht-standardkonforme, gültige, obsolete und als veraltet (&amp;ldquo;deprecated&amp;rdquo;) betrachtete.Auf dieser Seite finden Sie eine Liste aller Standard HTML5-Elemente, beschrieben durch ihr öffnendes Tag, nach Funktion gruppiert.</description>
+    </item>
+    
+    <item>
+      <title>Developer reference</title>
+      <link>https://tillbey.github.io/travis-test/docs/dev/bla-kopie-5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tillbey.github.io/travis-test/docs/dev/bla-kopie-5/</guid>
+      <description>bdgb fdfb
+ dsng gngfnb  ssecond a vafdvfadsvdAuf dieser Seite finden Sie eine Liste aller Standard HTML5-Elemente, beschrieben durch ihr öffnendes Tag, nach Funktion gruppiert. Diese Liste enthält ausschließlich die gültigen HTML5-Elemente. In neuen Websites sollten nur die hier aufgezählten Tags verwendet werden. Eine komplette Liste aller HTML-Elemente finden Sie im Index aller HTML-Elemente. Dieser enthält sämtliche möglichen Tags: standardisierte, nicht-standardkonforme, gültige, obsolete und als veraltet (&amp;ldquo;deprecated&amp;rdquo;) betrachtete.Auf dieser Seite finden Sie eine Liste aller Standard HTML5-Elemente, beschrieben durch ihr öffnendes Tag, nach Funktion gruppiert.</description>
+    </item>
+    
+    <item>
+      <title>Developer reference</title>
+      <link>https://tillbey.github.io/travis-test/docs/dev/bla-kopie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tillbey.github.io/travis-test/docs/dev/bla-kopie/</guid>
+      <description>bdgb fdfb
+ dsng gngfnb  ssecond a vafdvfadsvdAuf dieser Seite finden Sie eine Liste aller Standard HTML5-Elemente, beschrieben durch ihr öffnendes Tag, nach Funktion gruppiert. Diese Liste enthält ausschließlich die gültigen HTML5-Elemente. In neuen Websites sollten nur die hier aufgezählten Tags verwendet werden. Eine komplette Liste aller HTML-Elemente finden Sie im Index aller HTML-Elemente. Dieser enthält sämtliche möglichen Tags: standardisierte, nicht-standardkonforme, gültige, obsolete und als veraltet (&amp;ldquo;deprecated&amp;rdquo;) betrachtete.Auf dieser Seite finden Sie eine Liste aller Standard HTML5-Elemente, beschrieben durch ihr öffnendes Tag, nach Funktion gruppiert.</description>
+    </item>
+    
+    <item>
+      <title>Developer reference</title>
+      <link>https://tillbey.github.io/travis-test/docs/dev/bla/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tillbey.github.io/travis-test/docs/dev/bla/</guid>
+      <description>bdgb fdfb
+ dsng gngfnb  ssecond a vafdvfadsvdAuf dieser Seite finden Sie eine Liste aller Standard HTML5-Elemente, beschrieben durch ihr öffnendes Tag, nach Funktion gruppiert. Diese Liste enthält ausschließlich die gültigen HTML5-Elemente. In neuen Websites sollten nur die hier aufgezählten Tags verwendet werden. Eine komplette Liste aller HTML-Elemente finden Sie im Index aller HTML-Elemente. Dieser enthält sämtliche möglichen Tags: standardisierte, nicht-standardkonforme, gültige, obsolete und als veraltet (&amp;ldquo;deprecated&amp;rdquo;) betrachtete.Auf dieser Seite finden Sie eine Liste aller Standard HTML5-Elemente, beschrieben durch ihr öffnendes Tag, nach Funktion gruppiert.</description>
+    </item>
+    
+    <item>
+      <title>Developer reference 2</title>
+      <link>https://tillbey.github.io/travis-test/docs/dev/bli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tillbey.github.io/travis-test/docs/dev/bli/</guid>
+      <description>bdgb fdfb
+ dsng gngfnb  ssecond a vafdvfadsvdAuf dieser Seite finden Sie eine Liste aller Standard HTML5-Elemente, beschrieben durch ihr öffnendes Tag, nach Funktion gruppiert. Diese Liste enthält ausschließlich die gültigen HTML5-Elemente. In neuen Websites sollten nur die hier aufgezählten Tags verwendet werden. Eine komplette Liste aller HTML-Elemente finden Sie im Index aller HTML-Elemente. Dieser enthält sämtliche möglichen Tags: standardisierte, nicht-standardkonforme, gültige, obsolete und als veraltet (&amp;ldquo;deprecated&amp;rdquo;) betrachtete.Auf dieser Seite finden Sie eine Liste aller Standard HTML5-Elemente, beschrieben durch ihr öffnendes Tag, nach Funktion gruppiert.</description>
+    </item>
+    
+    <item>
+      <title>Site search</title>
+      <link>https://tillbey.github.io/travis-test/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tillbey.github.io/travis-test/search/</guid>
+      <description>search for something on the site!</description>
+    </item>
+    
+    <item>
+      <title>Tahiti – Interactive image analysis</title>
+      <link>https://tillbey.github.io/travis-test/docs/start/blup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tillbey.github.io/travis-test/docs/start/blup/</guid>
+      <description>Goals  close the gap between image analysis libraries and ImageJ style point and click programs easy chaining together of compatible analysis steps provide full support for 3D image stacks, channels, batches use existing libraries for analysis and display, allowing to tap into the data at any point with standard Python code  To do reimplement graphical user interface in Enaml to avoid double model layer of pyqtgraph and Tahiti use Atom classes for parameters and setting display modules in pipeline panel integrate with image viewer  build an interactive matplotlib module make enaml aware of matplotlib events plotted points refer back to picture  use pandas with multiindex for storing batch data, including images open images into a pandas dataframe   Underlying architecture The basic unit of Tahiti is the module, which is at the same time a Python module.</description>
+    </item>
+    
+  </channel>
+</rss>
